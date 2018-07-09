@@ -11,9 +11,9 @@ d2rq的檔案： </br>
 我根據網址(https://github.com/d2rq/d2rq)：
 先安裝了Apache ant(用了homebrew套件管理安裝)之後要用git指令直接裝d2rq，
 結果遇上了字樣-- "Permission denied (publickey)" error when pushing with Git
-最終在此連結(https://gist.github.com/adamjohnson/5682757)找到解決方法：需要設定SSH，即能執行git clone git@github.com:d2rq/d2rq.git下載到檔案。d2rq會被安裝在.ssh資料夾中，用terminal移動到當前資料夾(d2rq)，執行ant jar，把執行d2rq還需要的檔案再添加上去。
+最終在此連結(https://gist.github.com/adamjohnson/5682757) 找到解決方法：需要設定SSH，即能執行git clone git@github.com:d2rq/d2rq.git下載到檔案。d2rq會被安裝在.ssh資料夾中，用terminal移動到當前資料夾(d2rq)，執行ant jar，把執行d2rq還需要的檔案再添加上去。
 
-官方指南有說需要JDBC，不過MySQL本來就有自帶，不需額外下載。我在安裝好MySQL後嘗試在terminal到.ssh/d2rq中執行放進去的ttl檔案(我用知乎上SimmerChan提供的檔案：https://zhuanlan.zhihu.com/p/32880610)，因為connection failed依然無法成功。(有可能關鍵字沒下對，所以google的答案都不直接ＱＡＱ)
+官方指南有說需要JDBC，不過MySQL本來就有自帶，不需額外下載。我在安裝好MySQL後嘗試在terminal到.ssh/d2rq中執行放進去的ttl檔案(我用知乎上SimmerChan提供的檔案：https://zhuanlan.zhihu.com/p/32880610) ，因為connection failed依然無法成功。(可能關鍵字沒下對，所以google的答案都不直接ＱＡＱ)
 最後決定用XAMPP直接架Apache和MySQL。
 
 database:  </br>

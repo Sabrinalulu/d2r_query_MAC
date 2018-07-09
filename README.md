@@ -1,12 +1,12 @@
 # d2rq_query
 Display my procedure of installation and solutions of difficulties I encountered (Mac OS)  
 
-根據官方文件指南: http://d2rq.org/getting-started
-需要:
+根據官方文件指南: http://d2rq.org/getting-started  </br>
+需要:  </br>
 Java 1.5 or newer on the path (check with java -version if you're not sure),
 A supported database,such as Oracle, SQL Server, PostgreSQL, MySQL or HSQLDB.
 
-d2rq的檔案：
+d2rq的檔案： </br>
 因為下載的d2rq是資料夾檔(非dmg，單純zip，tar解壓後還是純資料夾)，mac上容易碰上command not found沒有設定讓terminal能直接辨認的問題。
 我根據網址(https://github.com/d2rq/d2rq)：
 先安裝了Apache ant(用了homebrew套件管理安裝)之後要用git指令直接裝d2rq，
@@ -16,7 +16,7 @@ d2rq的檔案：
 官方指南有說需要JDBC，不過MySQL本來就有自帶，不需額外下載。我在安裝好MySQL後嘗試在terminal到.ssh/d2rq中執行放進去的ttl檔案(我用知乎上SimmerChan提供的檔案：https://zhuanlan.zhihu.com/p/32880610)，因為connection failed依然無法成功。(有可能關鍵字沒下對，所以google的答案都不直接ＱＡＱ)
 最後決定用XAMPP直接架Apache和MySQL。
 
-database:
+database:  </br>
 到XAMPP官網： https://www.apachefriends.org/download.html 下載dmg檔案安裝，
 可以看這個網站的指引：http://itcathk.blogspot.com/2016/04/mac-xampp.html
 因為mac有自己開著的Apache，必須先把它關掉才能夠開啟XAMPP的伺服器，防止通道因為已佔用無法讓XAMPP使用。
@@ -27,9 +27,9 @@ sudo /Applications/XAMPP/xamppfiles/bin/apachectl start
 ```
 開啟XAMPP的control panel看是否Apache web server已被開啟，再把MySQL Database也打開，就可以在瀏覽器網址欄輸入http://localhost/phpMyAdmin
 成功看到phpMyAdmin的介面，匯入知乎的movie sql檔案。最後到Terminal的.ssh/d2rq資料夾中執行./d2r-server kg_demo_movie_mapping.ttl ，看到INFO  JettyLauncher        :: [[[ Server started at http://localhost:2020/ ]]]
-回到瀏覽器執行http://localhost:2020/ 可以成功開啟介面。
+回到瀏覽器執行http://localhost:2020/ 可以成功開啟介面。  </br>
 
 ![](https://github.com/Sabrinalulu/d2rq_query/blob/master/d2rInterface.png)
 
-點擊紫色區塊：this AJAX-based SPARQL Explorer
+點擊紫色區塊：this AJAX-based SPARQL Explorer  </br>
 便會呈現操作SPARQL的頁面。

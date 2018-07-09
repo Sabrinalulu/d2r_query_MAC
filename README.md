@@ -7,7 +7,7 @@ Java 1.5 or newer on the path (check with java -version if you're not sure),
 A supported database,such as Oracle, SQL Server, PostgreSQL, MySQL or HSQLDB.
 
 d2rq的檔案： </br>
-因為下載的d2rq是資料夾檔(非dmg，單純zip，tar解壓後還是純資料夾)，mac上容易碰上command not found沒有設定讓terminal能直接辨認的問題。
+因為下載的d2rq是資料夾檔(非dmg，單純zip，tar解壓後還是純資料夾)，mac會碰上command not found，因為沒有設定讓terminal能直接辨認。
 我根據網址(https://github.com/d2rq/d2rq)：
 先安裝了Apache ant(用了homebrew套件管理安裝)之後要用git指令直接裝d2rq，
 結果遇上了字樣-- "Permission denied (publickey)" error when pushing with Git

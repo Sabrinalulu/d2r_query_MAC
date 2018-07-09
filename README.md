@@ -29,4 +29,7 @@ sudo /Applications/XAMPP/xamppfiles/bin/apachectl start
 成功看到phpMyAdmin的介面，匯入知乎的movie sql檔案。最後到Terminal的.ssh/d2rq資料夾中執行./d2r-server kg_demo_movie_mapping.ttl ，看到INFO  JettyLauncher        :: [[[ Server started at http://localhost:2020/ ]]]
 回到瀏覽器執行http://localhost:2020/ 可以成功開啟介面。
 
-![] https://github.com/Sabrinalulu/d2rq_query/blob/master/d2rInterface.png
+![](https://github.com/Sabrinalulu/d2rq_query/blob/master/d2rInterface.png)
+
+點擊紫色區塊：this AJAX-based SPARQL Explorer
+便會呈現操作SPARQL的頁面。

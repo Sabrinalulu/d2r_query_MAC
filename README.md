@@ -1,4 +1,4 @@
-# d2rq_query
+# d2r_query
 Display my procedure of installation and solutions of difficulties I encountered (Mac OS)  
 
 根據官方文件指南: http://d2rq.org/getting-started  </br>
